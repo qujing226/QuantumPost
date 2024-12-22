@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="modules/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <h2>{{web.title}}</h2>
+    <h2>{{web.url}}</h2>
+    <button @click="edit">change</button>
+</div>
+<script>
+    const { createApp, reactive } = Vue;
+    createApp({
+        setup() {
+            const web = reactive({
+                title: "hello",
+                url: "baidu.com"
+            });
+            const edit = () => {
+                web.title = "hello world";
+            };
+            return {
+                web,
+                edit
+            };
+        }
+    }).mount("#app");
+</script>
+</body>
+</html>
