@@ -1,9 +1,9 @@
 /server/myapp/migrations
 /server/myapp/views/__pycache__/
 /server/.idea
-/web/.idea
-/web/dist
-/web/node_modules
+/vue/.idea
+/vue/dist
+/vue/node_modules
 /server/.idea/
 /.idea/
 __pycache__
@@ -11,4 +11,4 @@ __pycache__
 server/.idea
 .DS_Store
 server/.DS_Store
-web/.DS_Store
+vue/.DS_Store
